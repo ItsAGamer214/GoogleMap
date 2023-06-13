@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+   
+  <script src="http://maps.google.com/maps/api/js?key=AIzaSyB3GwQMG2tsu0OMZXAiSGF9RvDCFSoN6pQ" 
+          type="text/javascript"></script>
+          <link rel = "stylesheet" type = "text/css" href = "myMap.css">
+</head> 
+<body>
+
+  <div class = tester>
+  <div id="map" style="width: 100%; height: 100%;"></div>
+
+  <script type="text/javascript">
+    var latlng = [];
+      
+    
+          var point = new google.maps.LatLng(36.132572,-95.887184);
+          latlng.push(point);
+          
+          var point = new google.maps.LatLng(35.232191,-97.422035);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.648117,-97.566091);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.718466,-97.419557);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.072261,-98.235697);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(34.089727,-96.771295);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.537592,-97.527877);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.225840,-97.479260);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(36.089489,-95.905758);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.290594,-97.816188);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.618243,-97.572166);
+          latlng.push(point);
+
+         var point = new google.maps.LatLng(35.254476,-95.125654);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.506170,-97.749104);
+          latlng.push(point);
+
+         var point = new google.maps.LatLng(35.458408,-97.400055);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.272158,-97.482389);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(35.545154,-97.514935);
+          latlng.push(point);
+
+         var point = new google.maps.LatLng(35.714948,-97.749012);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(35.751048,-95.371285);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(36.703970,-97.083104);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(36.307134,-95.637772);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(36.103187,-95.940281);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(35.485398,-96.686222);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(36.310249,-95.613784);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(35.637760,-97.462526);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(35.575862,-96.043145);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(34.530421,-96.218454);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(34.474951,-97.964816);
+          latlng.push(point);
+
+            var point = new google.maps.LatLng(35.565387,-97.565752);
+          latlng.push(point);
+
+         var point = new google.maps.LatLng(36.308661,-95.719082);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.526676,-97.973371);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.218539,-97.448681);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.440129,-97.521763);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(35.414004,-98.265058);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.659173,-97.479921);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.361421,-96.922695);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.087138,-96.383965);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(33.999331,-96.390041);
+          latlng.push(point);
+
+           var point = new google.maps.LatLng(36.263708,-95.853003);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.362115,-97.530983);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(35.493598,-97.463296);
+          latlng.push(point);
+
+          var point = new google.maps.LatLng(34.505795,-97.964405);
+          latlng.push(point);
+
+         var point = new google.maps.LatLng(36.834884,-101.679333);
+          latlng.push(point);
+
+          
+                  
+    
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 8,
+      center: new google.maps.LatLng(35.39024,-97.712891),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+    
+    
+    allTheVars = [
+  "2120 S Memorial Dr<br />Tulsa, OK 74129<br><br>Phone Number: 918-406-2005<br><br><a href='./location/1666' class='locations-view-link'>View Location Page</a>",
+  "1161 Sonoma Park Dr<br />Suite B<br />Norman, OK 73071<br><br>Phone Number: 4053299780<br>Website: www.steinerig.com/<br><br><a href='./location/1721' class='locations-view-link'>View Location Page</a>            <a href='http://www.steinerig.com/' target='_blank'>Visit Website</a>",
+  "17304 N. May Ave<br />Edmond, OK 73012<br><br>Phone Number: 405-509-4906<br>Website: www.davisinsuranceok.com/<br><br><a href='./location/1676' class='locations-view-link'>View Location Page</a>            <a href='http://www.davisinsuranceok.com/' target='_blank'>Visit Website</a>",
+  "6182 Boucher Dr<br />Edmond, OK 73034<br><br>Phone Number: 405-8264580<br>Website: www.mycanopyins.com/<br><br><a href='./location/1719' class='locations-view-link'>View Location Page</a>            <a href='http://www.mycanopyins.com/' target='_blank'>Visit Website</a>",
+  "516 E Central Blvd<br />Anadarko, OK 73005<br><br>Phone Number: 405-627-1914<br><br><a href='./location/1228' class='locations-view-link'>View Location Page</a>",
+  "121 S 1st Street<br />Madill, OK 73446<br><br>Phone Number: 405-795-6567<br>Website: www.butleragencyinc.com/madill-location<br><br><a href='./location/988' class='locations-view-link'>View Location Page</a>            <a href='http://www.butleragencyinc.com/madill-location' target='_blank'>Visit Website</a>",
+  "1001 NW 63rd<br />Suite 310<br />Oklahoma City, OK 73116<br><br>Phone Number: 405-254-5600<br>Website: thefrsgroup.com/<br><br><a href='./location/980' class='locations-view-link'>View Location Page</a>            <a href='http://thefrsgroup.com/' target='_blank'>Visit Website</a>",
+  "2460 Boardwalk St.<br />Norman, OK 73069<br><br>Phone Number: 405-561-6220<br>Website: www.insuredbybuffalo.com/<br><br><a href='./location/1671' class='locations-view-link'>View Location Page</a>            <a href='http://www.insuredbybuffalo.com/' target='_blank'>Visit Website</a>",
+  "6136 E. 51st St.<br />Tulsa, OK 74135<br><br>Phone Number: 580-484-2384<br>Website: www.facebook.com/CareFirstInsurance/<br><br><a href='./location/1672' class='locations-view-link'>View Location Page</a>            <a href='http://www.facebook.com/CareFirstInsurance/' target='_blank'>Visit Website</a>",
+  "304 W. Main St.<br />Tuttle, OK 73059<br><br>Phone Number: 405-381-3371<br>Website: www.cigok.com/<br><br><a href='./location/1673' class='locations-view-link'>View Location Page</a>            <a href='http://www.cigok.com/' target='_blank'>Visit Website</a>",
+  "14516 Bogert Pkwy<br />Suite B<br />Oklahoma City, OK 73134<br><br>Phone Number: 405-342-8019<br>Website: cvtins.com/<br><br><a href='./location/1674' class='locations-view-link'>View Location Page</a>            <a href='http://cvtins.com/' target='_blank'>Visit Website</a>",
+  "105 N. Broadway St.<br />Stigler, OK 74462<br><br>Phone Number: 918-967-2225<br>Website: www.coxins-agency.com/locations/<br><br><a href='./location/1675' class='locations-view-link'>View Location Page</a>            <a href='http://www.coxins-agency.com/locations/' target='_blank'>Visit Website</a>",
+  "112 South 4th St.<br />Yukon, OK 73099<br><br>Phone Number: 405-354-7920<br>Website: okinsurancepro.com/<br><br><a href='./location/1686' class='locations-view-link'>View Location Page</a>            <a href='http://okinsurancepro.com/' target='_blank'>Visit Website</a>",
+  "108 W Glenhaven Dr<br />Oklahoma City, OK 73110<br><br>Phone Number: 405-261-4945<br><br><a href='./location/1708' class='locations-view-link'>View Location Page</a>",
+  "2761 Washington Dr.<br />Suite 101A<br />Norman, OK 73067<br><br>Phone Number: 405-963-0152<br><br><a href='./location/1682' class='locations-view-link'>View Location Page</a>",
+  "7301 Broadway Ext<br />Suite 200<br />Oklahoma City, OK 73116<br><br>Phone Number: 405-843-9191<br>Website: pi-ins.com/<br><br><a href='./location/1681' class='locations-view-link'>View Location Page</a>            <a href='http://pi-ins.com/' target='_blank'>Visit Website</a>",
+  "8457 Rockcliff Way<br />Piedmont, OK 73078<br><br>Phone Number: 405-255-8544<br><br><a href='./location/1680' class='locations-view-link'>View Location Page</a>",
+  "320 N. 4th St<br />Muskogee, OK 74401<br><br>Phone Number: 918-682-8900<br>Website: www.progressiveagent.com/local-agent/oklahoma/muskogee/williams-humphrey-insurance-agency/<br><br><a href='./location/1687' class='locations-view-link'>View Location Page</a>            <a href='http://www.progressiveagent.com/local-agent/oklahoma/muskogee/williams-humphrey-insurance-agency/' target='_blank'>Visit Website</a>",  "113 East Grand Ave<br />Ponca City, OK 74601<br><br>Phone Number: 580-767-1520<br>Website: www.downtownponcacity.com/directory.html<br><br><a href='./location/1679' class='locations-view-link'>View Location Page</a>            <a href='http://www.downtownponcacity.com/directory.html' target='_blank'>Visit Website</a>",
+  "2317 Holly Rd<br />Claremore, OK 74017<br><br>Phone Number: 918-663-3628<br>Website: anytimeinsuranceok.com/<br><br><a href='./location/1669' class='locations-view-link'>View Location Page</a>            <a href='http://anytimeinsuranceok.com/' target='_blank'>Visit Website</a>",
+  "4138 S. Harvard Ave<br />Suite C-1<br />Tulsa, OK 74135<br><br>Phone Number: 918-727-2759<br>Website: blueprint-risk.com/<br><br><a href='./location/1670' class='locations-view-link'>View Location Page</a>            <a href='http://blueprint-risk.com/' target='_blank'>Visit Website</a>",
+  "821 N. Jim Thorpe Blvd<br />Prague, OK 74864<br><br>Phone Number: 405-567-2255<br>Website: www.terrellinsurancegroup.com/health/insurance_quote.aspx<br><br><a href='./location/1683' class='locations-view-link'>View Location Page</a>            <a href='http://www.terrellinsurancegroup.com/health/insurance_quote.aspx' target='_blank'>Visit Website</a>",
+  "307 Patti Page Blvd<br />Claremore, OK 74017<br><br>Phone Number: 918-341-2196<br>Website: www.burrowsagency.com/<br><br><a href='./location/1684' class='locations-view-link'>View Location Page</a>            <a href='http://www.burrowsagency.com/' target='_blank'>Visit Website</a>",
+  "1300 E 15th St<br />Suite 140<br />Edmond, OK 73013<br><br>Phone Number: 405-388-4134<br><br><a href='./location/1685' class='locations-view-link'>View Location Page</a>",
+  "19349 Wilson Rd<br />Okmulgee, OK 74447<br><br>Phone Number: <br><br><a href='./location/1677' class='locations-view-link'>View Location Page</a>",
+  "701 S Broadway<br />Suite A<br />Coalgate, OK 74538<br><br>Phone Number: 580-927-9900<br>Website: safeguardinsurance.insure/contact<br><br><a href='./location/989' class='locations-view-link'>View Location Page</a>            <a href='http://safeguardinsurance.insure/contact' target='_blank'>Visit Website</a>",
+  "2700 S 13th St<br />Duncan, OK 73533<br><br>Phone Number: 405-210-1385<br><br><a href='./location/1695' class='locations-view-link'>View Location Page</a>",
+  "2814 W Britton Rd<br />Oklahoma City, OK 73120<br><br>Phone Number: 405-286-5025<br>Toll-Free: 1-866-242-9649<br>Website: centennialins.com/<br><br><a href='./location/1688' class='locations-view-link'>View Location Page</a>            <a href='http://centennialins.com/' target='_blank'>Visit Website</a>",
+  "20902 S Laurel St<br />Claremore, OK 74019<br><br>Phone Number: <br><br><a href='./location/1700' class='locations-view-link'>View Location Page</a>",
+  "706 Eagle Circle<br />El Reno, OK 73036<br><br>Phone Number: 405-262-7844<br>Website: www.aigok.com/<br><br><a href='./location/1668' class='locations-view-link'>View Location Page</a>            <a href='http://www.aigok.com/' target='_blank'>Visit Website</a>",
+  "420 W Main Street<br />Norman, OK 73069<br><br>Phone Number: 405-366-8700<br>Website: garnerinsurance.com/<br><br><a href='./location/985' class='locations-view-link'>View Location Page</a>            <a href='http://garnerinsurance.com/' target='_blank'>Visit Website</a>",
+  "2501 S Walker Ave.<br />Oklahoma City, OK 73109<br><br>Phone Number: 405-473-3606<br>Website: gbakeragency.com/contact<br><br><a href='./location/984' class='locations-view-link'>View Location Page</a>            <a href='http://gbakeragency.com/contact' target='_blank'>Visit Website</a>",
+  "108 W Main St<br />Norman, OK 73047<br><br>Phone Number: 405-542-3271<br><br><a href='./location/1696' class='locations-view-link'>View Location Page</a>",
+  "10 E Ayers St<br />Edmond, OK 73034<br><br>Phone Number: 405-650-1722<br>Website: insurevips.com/<br><br><a href='./location/1250' class='locations-view-link'>View Location Page</a>            <a href='http://insurevips.com/' target='_blank'>Visit Website</a>",
+  "11 E McArthur<br />Shawnee, OK 74804<br><br>Phone Number: 405-275-3306<br>Website: www.fordinsuranceok.com/<br><br><a href='./location/1251' class='locations-view-link'>View Location Page</a>            <a href='http://www.fordinsuranceok.com/' target='_blank'>Visit Website</a>",
+  "324 East Highway<br />Suite B<br />Holdenville, OK 74848<br><br>Phone Number: 405-379-3395<br>Website: jwbinsurance.com/personal-insurance<br><br><a href='./location/1678' class='locations-view-link'>View Location Page</a>        <a href='http://jwbinsurance.com/personal-insurance' target='_blank'>Visit Website</a>",
+  "516 Washington Ave.<br />Durant, OK 74701<br><br>Phone Number: 580-927-9900<br><br><a href='./location/1229' class='locations-view-link'>View Location Page</a>",
+  "202 S Cedar St<br />Suite D<br />Owasso, OK 74055<br><br>Phone Number: 918-973-6773<br>Website: www.extramileins.com/contact/<br><br><a href='./location/1230' class='locations-view-link'>View Location Page</a>            <a href='http://www.extramileins.com/contact/' target='_blank'>Visit Website</a>",
+  "10601 S. Western Ave.<br />Suite 111<br />Oklahoma City, OK 73170<br><br>Phone Number: 580-220-4269<br>Website: www.dutytraninsurance.com/<br><br><a href='./location/1231' class='locations-view-link'>View Location Page</a>  <a href='http://www.dutytraninsurance.com/' target='_blank'>Visit Website</a>",
+  "2501 NE 23rd St.<br />Suite B<br />Oklahoma City, OK 73111<br><br>Phone Number: 405-210-1227<br>Website: www.kirkseyagency.com/<br><br><a href='./location/1233' class='locations-view-link'>View Location Page</a>            <a href='http://www.kirkseyagency.com/' target='_blank'>Visit Website</a>",
+  "1309 W Ash Ave<br />Suite 101<br />Duncan, OK 73533<br><br>Phone Number: 580-656-4667<br>Website: www.adamsagency.net/<br><br><a href='./location/1667' class='locations-view-link'>View Location Page</a>            <a href='http://www.adamsagency.net/' target='_blank'>Visit Website</a>",
+  "2830 Road L<br />Guymon, OK 73942<br><br>Phone Number: 580461-5621<br><br><a href='./location/1710' class='locations-view-link'>View Location Page</a>"
+]
+
+
+
+    for (i = 0; i < latlng.length; i++) {  
+      marker = new google.maps.Marker({
+        position: latlng[i],
+        map: map,
+        title: "The Affinities Group",
+        
+      });
+   
+      
+
+
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          
+            infowindow.setContent(allTheVars[i]);
+          
+          
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+    
+
+  </script>
+
+</div>
+</body>
+</html>
